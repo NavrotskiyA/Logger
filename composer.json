@@ -1,0 +1,21 @@
+{
+    "name": "alex/dz5",
+    "description": "'PSR Logger'",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Alex\\Dz5\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Navrotskiy Alexandr",
+            "email": "Navrotskiy.alex@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "psr/log": "^1.1"
+    }
+}
