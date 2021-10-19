@@ -2,7 +2,7 @@
 
 namespace interfaces;
 
-interface FormatInterface
+interface FormaterInterface
 {
     public function format($data, $logType);
 }

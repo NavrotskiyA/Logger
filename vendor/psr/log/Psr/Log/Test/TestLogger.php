@@ -113,7 +113,7 @@ class TestLogger extends AbstractLogger
         }, $level);
     }
 
-    public function hasRecordThatPasses(callable $predicate, $level)
+    public function hasRecordThatPasses(callable $predicate, $level): bool
     {
         if (!isset($this->recordsByLevel[$level])) {
             return false;

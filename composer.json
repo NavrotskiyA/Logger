@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Alex\\Dz5\\": "src/"
+            "classes\\": "./src/classes",
+            "interfaces\\": "./src/interfaces"
         }
     },
     "authors": [
@@ -16,6 +17,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "psr/log": "^1.1"
+        "psr/log": "^1.1",
+        "monolog/monolog": "2.x-dev"
     }
 }

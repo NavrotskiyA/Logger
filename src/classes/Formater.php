@@ -2,9 +2,9 @@
 
 namespace classes;
 
-use interfaces\FormatInterface;
+use interfaces\FormaterInterface;
 
-class Format implements FormatInterface
+class Formater implements FormaterInterface
 {
     private $logString = "[level] [date] [message] [context]";
     public function format($data,$logType)
