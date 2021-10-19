@@ -9,6 +9,9 @@ class Writer implements WriterInterface
 {
     public function write($data, $logType)
     {
+        if(!is_dir('src/Log')){
+            mkdir('./src/Log');
+        }
         if($logType == 'log'){
             $this->log($data);
         } elseif($logType == 'txt'){
