@@ -4,5 +4,5 @@ namespace interfaces;
 
 interface WriterInterface
 {
-    function write($data, $logType);
+   public function write($data);
 }

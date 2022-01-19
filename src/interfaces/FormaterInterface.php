@@ -4,5 +4,5 @@ namespace interfaces;
 
 interface FormaterInterface
 {
-    public function format($data, $logType);
+    public function format($data);
 }
