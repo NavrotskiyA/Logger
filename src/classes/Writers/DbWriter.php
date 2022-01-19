@@ -37,7 +37,12 @@ class DbWriter implements WriterInterface
     private function connect()
     {
         $config = require_once(__DIR__ . "/../Config/DbConnectionConfig.php");
-        $this->connection = new PDO("mysql:host=".$config['host'].";dbname=".$config['dbname'], $config['user'], $config['password']);
+        try {
+            $this->connection = new PDO("mysql:host=".$config['host'].";dbname=".$config['dbname'], $config['user'], $config['password']);
+        } catch (\PDOException $e){
+            echo "Use classes/Config/DbConnectionConfig.php to set your connection settings".PHP_EOL;
+            echo $e->getMessage();
+        }
     }
     private function prepareStatements()
     {
