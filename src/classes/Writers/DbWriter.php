@@ -17,8 +17,10 @@ class DbWriter implements WriterInterface
 
         DbLoggerConfig::tableCheck($this->connection);
         $this->prepareStatements();
+
         $formater = new DbFormater();
         $data = $formater->format($data);
+
         $this->connection->beginTransaction();
         try {
             $this->statements['main']->execute($data['main']);

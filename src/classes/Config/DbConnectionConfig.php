@@ -1,7 +1,7 @@
 <?php
 return [
     'host' => 'localhost',
-    'dbname' => 'laravel',
-    'user' => 'user_root',
-    'password' => 'Alex-Navr123'
+    'dbname' => 'test',
+    'user' => 'root',
+    'password' => '1234'
 ];
